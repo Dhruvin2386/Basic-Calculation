@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculation</title>
+</head>
+<body>
+    <h1>Q.5 formulas</h1>
+
+    <h1>formula - 1 = a² – b² = 10<sup>2</sup> - 20<sup>2</sup></h1>
+    <h2 id="for1"></h2>
+
+    <h1>formula - 2 = (a-b)² = (10 - 20)<sup>2</sup></h1>
+    <h2 id="for2"></h2>
+    
+    <h1>formula - 3 = (a+b+c)² = (10 + 20 + 30)<sup>2</sup></h1>
+    <h2 id="for3"></h2>
+
+    <h1>formula - 4 = (a-b-c)² = (10 - 20 - 30)<sup>2</sup></h1>
+    <h2 id="for4"></h2>
+
+    <h1>formula - 5 = (a-b)³ = (10 - 20)<sup>3</sup></h1>
+    <h2 id="for5"></h2>
+
+    <script>
+        var a = 10, b = 20, c = 30;
+        document.getElementById('for1').innerHTML = a*a - b*b;
+
+        document.getElementById('for2').innerHTML = a*a - 2*a*b + b*b;
+
+        document.getElementById('for3').innerHTML = a*a + b*b + c*c + 2*a*b +2*a*c + 2*b*c;
+
+        document.getElementById('for4').innerHTML = a*a + b*b + c*c - 2*a*b - 2*a*c + 2*b*c;
+
+        document.getElementById('for5').innerHTML = a*a*a - 3*a*a*b + 3*a*b*b - b*b*b;
+    </script>
+</body>
+</html>
